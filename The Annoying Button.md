@@ -8,6 +8,7 @@
 
 For this project, we’re going to take the simple button program we’ve worked on earlier this week; and turn it into an annoying button, similar to the early web flash game, *Do Not Push The Red Button*:
 
+
 We’ve shown you already how to interact with JavaScript & Change Buttons, now the options on how you make your button more annoying are up to you.
 
 ### Making your Annoying Button more Annoying-er:
