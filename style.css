@@ -7,13 +7,13 @@ body{
 #button1 {
     background-color:red;
     margin-top: 250px;
-    margin-left: 790px;
+    margin-left: 800px;
     border-radius: 50%;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     font-size: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     position: relative;
-    box-shadow: 1px 10px grey;
+    box-shadow: -1px 25px grey;
 }
