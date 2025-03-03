@@ -4,7 +4,7 @@ body{
 }
 
 
-#button1 {
+.button1 {
     background-color:red;
     margin-top: 250px;
     margin-left: 800px;
