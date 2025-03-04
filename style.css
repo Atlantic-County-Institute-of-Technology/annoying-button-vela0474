@@ -1,3 +1,26 @@
+@keyframes back-and-forth {
+    0%, 5%, 95%, 100%{
+        left: 0%;
+        transform: translate(0,0)
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100%, )
+    }
+}
+
+@keyframes quick-moving {
+    0%, 5%, 95%, 100%{
+        left: 0%;
+        transform:  translate(0,0)
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100, );
+    }
+}
+
+
 body{
     background-color:lightblue;
     position: relative;
@@ -7,7 +30,7 @@ body{
 .button1 {
     background-color:red;
     margin-top: 250px;
-    margin-left: 800px;
+    margin-left: 500px;
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -16,4 +39,53 @@ body{
     font-weight: bolder;
     position: relative;
     box-shadow: -1px 25px grey;
+}
+
+
+.angry {
+    background-color: rgb(148, 26, 26);
+    animation: 3s back-and-forth ease-in-out infinite;
+}
+
+.more_angry {
+    background-color: rgba(80, 6, 6, 0.63);
+    rotate: 50deg;
+}
+
+.button2 {
+    background-color: rgb(17, 172, 17);
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    position: relative;
+    box-shadow: -1px 25px grey;
+}
+
+.cooked {
+    background-color: grey;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+
+
+    0% {
+        transform: rotate(0deg)
+                translateY(530px) rotate(0deg);
+    }
+    
+                100% {
+                    transform: rotate(360deg)
+                            translateY(530px) rotate(0deg)
+                }
+}
+
+.warning {
+    background-color: rgba(223, 88, 88, 0.274);
+    animation: 1s quick-moving ease-in-out infinite;
 }
