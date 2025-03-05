@@ -7,7 +7,7 @@
         left: 100%;
         transform: translate(-100%, )
     }
-}
+} /*This is connected to the angry class*/
 
 @keyframes quick-moving {
     0%, 5%, 95%, 100%{
@@ -18,13 +18,24 @@
         left: 100%;
         transform: translate(-100, );
     }
-}
+} /*This is connected to the warning class*/
+
+@keyframes moving-left-right-fast {
+    0%, 5%, 95%, 100%{
+        left: 0%;
+        transform:  translate(0,0)
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100, );
+    }
+} /*This is connected to the go_home class*/
 
 
 body{
     background-color:lightblue;
     position: relative;
-}
+} /*This is the body for my buttons*/
 
 
 .button1 {
@@ -39,7 +50,7 @@ body{
     font-weight: bolder;
     position: relative;
     box-shadow: -1px 25px grey;
-}
+} /*This is the first button*/
 
 
 .angry {
@@ -50,10 +61,10 @@ body{
 .more_angry {
     background-color: rgba(80, 6, 6, 0.63);
     rotate: 50deg;
-}
+} /*Both of these classes move around the button*/
 
 .button2 {
-    background-color: rgb(17, 172, 17);
+    background-color: green;
     margin-top: 50px;
     margin-left: 200px;
     border-radius: 50%;
@@ -64,7 +75,7 @@ body{
     font-weight: bolder;
     position: relative;
     box-shadow: -1px 25px grey;
-}
+} /*this is the second button*/
 
 .cooked {
     background-color: grey;
@@ -83,9 +94,33 @@ body{
                     transform: rotate(360deg)
                             translateY(530px) rotate(0deg)
                 }
-}
+} /*This is to make the button rotate for the cooked class*/
 
 .warning {
     background-color: rgba(223, 88, 88, 0.274);
     animation: 1s quick-moving ease-in-out infinite;
+}/*This makes the button move really fast and kind of hard to get*/
+
+.go_home {
+    background-color: red;
+    animation: rotate1 5s linear infinite;
+}  
+
+@keyframes rotate1 {
+
+
+    0% {
+        transform: rotate(0deg)
+                translateY(540px) rotate(0deg);
+    }
+    
+                100% {
+                    transform: rotate(360deg)
+                            translateY(540px) rotate(0deg);
+                }
+} /*This will make both buttons go really fast and even harder to get */
+
+.container {
+    
+
 }
