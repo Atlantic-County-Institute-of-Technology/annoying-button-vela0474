@@ -2,6 +2,12 @@ let text = document.getElementById("text");
 let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
 
+let rick = new Audio('assets/rick.mp3');
+// create sound object
+let click = new Audio('assets/click.mp3');
+// play sound
+click.play();
+
 let clicks = 0;
 
 button1.addEventListener("click", yell_at_user);
@@ -56,27 +62,36 @@ function yell_at_user() {
         button2.classList.remove("warning");
         text.innerHTML = "You just don't give up";
      }
-     else if(clicks == 66) {
+     else if(clicks == 70) {
         button1.classList.add("go_home");
         button2.classList.add("go_home");
         text.innerHTML = "You didn't want to stop so now you have to get them!";
      }
-     else if(clicks == 73) {
+     else if(clicks == 71) {
         button1.classList.remove("go_home");
         button2.classList.remove("go_home");
         text.innerHTML = "There is no way that you actually got this far, wow...";
      }
-     else if(clicks == 80) {
+     else if(clicks == 75) {
+        button1.classList.add("get-out");
+        button2.classList.add("get-out");
+        text.innerHTML = "Should have given up";
+     }
+     else if(clicks == 83) {
        button1.classList.add("sad_button");
        button2.classList.add("sad_button");
-        text.innerHTML = "Well ok, I might give up soon";
-     }
-     else if(clicks == 86) {
-        button1.classList.remove("sad_button");
-        button2.classList.remove("sad_button");    
-        text.innerHTML = "Still don't know how you got passed the buttons spinning fast...";
+       button1.classList.remove("get-out");
+       button2.classList.remove("get-out");
+       text.innerHTML = "Well ok, I might give up soon";
      }
      else if(clicks == 91) {
+        button1.classList.remove("sad_button");
+        button2.classList.remove("sad_button");    
+        text.innerHTML = "Why do you keep clicking me! :( ";
+     }
+     else if(clicks == 100) {
+        button1.classList.add("fly");
+        button2.classList.add("flies");
         text.innerHTML = "Alright, I'm done now bye bye :)";
      }
 }

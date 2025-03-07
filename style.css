@@ -11,11 +11,12 @@
 
 @keyframes moving-fast {
     0%, 5%, 95%, 100%{
-        left: 0%;
+        left: 50%;
         transform:  translate(0,0)
     }
     45%, 55% {
         left: 100%;
+        right: 100%;
         transform: translate(-100, );
     }
 }/*This is connected to the getting-angry*/
@@ -42,6 +43,18 @@
     }
 } /*This is connected to the go_home class*/
 
+@keyframes moving-around{
+    0%, 5%, 95%, 100%{
+        left: 0%;
+        right: 200%;
+        transform:  translate(0,0)
+    }
+    45%, 55% {
+        left: 100%;
+        transform: translate(-100, );
+    }
+}/*This is connected to the get-out class*/
+
 
 body{
     background-color:lightblue;
@@ -65,13 +78,13 @@ body{
 
 .getting-angry {
     background-color: rgba(145, 8, 8, 0.952);
-    animation: 5s moving-fast ease-in-out infinite;
-}
+    animation: 0.5s moving-fast ease-in-out infinite;
+} /*This will make the button go really fast*/
 
 .angry {
     background-color: rgb(78, 51, 51);
     animation: 2s back-and-forth ease-in-out infinite;
-}
+} /* This is going to make by button go back and forth*/
 
 .more_angry {
     background-color: rgba(80, 6, 6, 0.63);
@@ -118,11 +131,10 @@ body{
 
 .go_home {
     background-color: red;
-    animation: rotate1 0.5s linear infinite;
+    animation: rotate1 2s linear infinite;
 }  
 
 @keyframes rotate1 {
-
 
     0% {
         transform: rotate(0deg)
@@ -134,6 +146,11 @@ body{
                             translateY(540px) rotate(0deg);
                 }
 } /*This will make both buttons go really fast and even harder to get */
+
+.get-out {
+    background-color: rgb(7, 114, 128);
+    animation: 0.1s moving-around ease-in-out infinite;
+} /*Makes the button move really really fast*/
 
 .sad_button {
     background-color: darkblue;
@@ -154,4 +171,38 @@ body{
                 }
 } /*This connects to the sad_button to make them blue and rotate*/
 
+.fly {
+    animation: rotate8 4s linear infinite;
+}
 
+@keyframes rotate8 {
+
+
+    0% {
+        transform: rotate(0deg)
+                translateY(540px) rotate(0deg);
+    }
+    
+                100% {
+                    transform: rotate(360deg)
+                            translateY(540px) rotate(0deg);
+                }
+} /*This will make button1 rotate around the screen*/
+
+.flies {
+    animation: rotate9 3s linear infinite;
+}
+
+@keyframes rotate9 {
+
+
+    0% {
+        transform: rotate(0deg)
+                translateY(490px) rotate(0deg);
+    }
+    
+                100% {
+                    transform: rotate(360deg)
+                            translateY(490px) rotate(0deg);
+                }
+} /*This will make button2 rotate a tad bit slower than button1*/
