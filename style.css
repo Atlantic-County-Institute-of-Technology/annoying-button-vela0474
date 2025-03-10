@@ -131,7 +131,7 @@ body{
 
 .go_home {
     background-color: red;
-    animation: rotate1 2s linear infinite;
+    animation: rotate1 3s linear infinite;
 }  
 
 @keyframes rotate1 {

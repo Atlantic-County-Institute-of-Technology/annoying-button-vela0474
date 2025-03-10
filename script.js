@@ -63,29 +63,29 @@ function yell_at_user() {
         button2.classList.add("go_home");
         text.innerHTML = "You didn't want to stop so now you have to get them!";
      }/*This will rotate the buttons*/
-     else if(clicks == 71) {
+     else if(clicks == 73) {
         button1.classList.remove("go_home");
         button2.classList.remove("go_home");
         text.innerHTML = "There is no way that you actually got this far, wow...";
      }/*This will make the button normal again*/
-     else if(clicks == 75) {
+     else if(clicks == 85) {
         button1.classList.add("get-out");
         button2.classList.add("get-out");
         text.innerHTML = "Should have given up";
      }/*This will make the button move really fast, just spam in between the first button*/
-     else if(clicks == 83) {
+     else if(clicks == 93) {
        button1.classList.add("sad_button");
        button2.classList.add("sad_button");
        button1.classList.remove("get-out");
        button2.classList.remove("get-out");
        text.innerHTML = "Well ok, I might give up soon";
      }/*This will make the button sad and spin a little*/
-     else if(clicks == 91) {
+     else if(clicks == 100) {
         button1.classList.remove("sad_button");
         button2.classList.remove("sad_button");    
         text.innerHTML = "Why do you keep clicking me! :( ";
      }/*This will be one of the last clicks the button gets */
-     else if(clicks == 100) {
+     else if(clicks == 105) {
         button1.classList.add("fly");
         button2.classList.add("flies");
         text.innerHTML = "Alright, I'm done now bye bye :)";
